@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.about-container {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ff00b8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.main-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #ff00b8;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+/* Leadership Section */
+.leadership-section {
+  margin-bottom: 3rem;
+}
+
+.leadership-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.founder-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.co-founder-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.leader-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.leader-image {
+  width: 8rem;
+  height: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.leader-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.leader-text {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.team-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.team-image {
+  width: 6rem;
+  height: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 640px) {
+  .about-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-text {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .section-text {
+    font-size: 1.125rem;
+  }
+
+  .leader-image {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .leader-name {
+    font-size: 1.5rem;
+  }
+
+  .leader-text {
+    font-size: 1.125rem;
+  }
+
+  .team-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .team-name {
+    font-size: 1.25rem;
+  }
+
+  .team-role {
+    font-size: 1.125rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .main-title {
+    font-size: 1.875rem;
+  }
+
+  .main-text {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-text {
+    font-size: 0.875rem;
+  }
+
+  .founder-card {
+    max-width: 100%;
+  }
+
+  .co-founder-container {
+    grid-template-columns: repeat(2, minmax(0, 150px));
+    gap: 1rem;
+  }
+
+  .leader-image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .leader-name {
+    font-size: 1.125rem;
+  }
+
+  .leader-text {
+    font-size: 0.875rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+
+  .team-role {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-image {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.875rem;
+  }
+}

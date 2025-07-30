@@ -1,0 +1,77 @@
+/* Review.css */
+
+.review-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.review-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+  margin: 8px 0;
+}
+
+.review-card strong {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.review-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.review-card input,
+.review-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.review-card textarea {
+  resize: vertical;
+}
+
+.review-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.review-button.save {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.review-button.cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.review-button.edit {
+  background-color: #2196F3;
+  color: white;
+}

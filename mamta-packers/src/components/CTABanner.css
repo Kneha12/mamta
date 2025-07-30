@@ -1,0 +1,78 @@
+.cta-banner {
+  background-color: #ffe6ef; /* Light pink */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.cta-banner h2 {
+  font-size: 26px;
+  color: #d81b60;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item svg {
+  color: #d81b60;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons a.instagram {
+  background-color: #E1306C;
+}
+.social-icons a.youtube {
+  background-color: #FF0000;
+}
+.social-icons a.facebook {
+  background-color: #1877F2;
+}
+.social-icons a.twitter {
+  background-color: #1DA1F2;
+}
+.social-icons a.whatsapp {
+  background-color: #25D366;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}

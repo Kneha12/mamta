@@ -1,0 +1,32 @@
+.quotes-admin {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.filters {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filters input, .filters button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.quote-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.quote-table th, .quote-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.pagination {
+  margin-top: 1rem;
+}

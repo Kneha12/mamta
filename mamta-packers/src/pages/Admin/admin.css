@@ -1,0 +1,29 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #1e1e2e;
+  color: white;
+  padding: 20px;
+}
+
+.admin-sidebar nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.admin-sidebar nav a:hover {
+  background: #333;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 20px;
+  background: #f9f9f9;
+}

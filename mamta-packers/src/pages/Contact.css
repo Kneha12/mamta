@@ -1,0 +1,98 @@
+.cta-banner {
+  background-color: #ffe6ef; /* Light pink */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.cta-banner h2 {
+  font-size: 26px;
+  color: #d81b60;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item svg {
+  color: #d81b60;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: #d81b60;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #b0134f;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .cta-banner h2 {
+    font-size: 22px;
+  }
+
+  .contact-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+.cta-call-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #d81b60; /* Pink */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px auto;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-call-button:hover {
+  background-color: #b0134f;
+}

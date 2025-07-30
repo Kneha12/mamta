@@ -1,0 +1,406 @@
+/* General container styling */
+.services-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Main title styling */
+.main-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FF00B8;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Intro text styling */
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2e2e42;
+  border: 2px solid rgba(252, 238, 9, 0.3);
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 1.8rem;
+  color: #FF00B8;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Grid layout for cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Card styling */
+.card {
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #e8ed8a;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(252, 238, 9, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.03);
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #2e2e42;
+  line-height: 1.5;
+  padding: 0 0.5rem;
+}
+
+/* What We Offer section */
+.what-we-offer .grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.what-we-offer .card {
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.what-we-offer .card:hover {
+  transform: translateY(-5px);
+  background-color: #e8ed8a;
+}
+
+.what-we-offer .card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(252, 238, 9, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.what-we-offer .card:hover .card-image {
+  transform: scale(1.03);
+}
+
+/* Reduce card size for Truck Types & Team */
+.section:not(.what-we-offer) .card {
+  padding: 0.8rem;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.section:not(.what-we-offer) .card-image {
+  height: 180px;
+  object-fit: cover;
+}
+
+.steps-list {
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+  color: #1d1d1d;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.steps-list li {
+  margin-bottom: 1rem;
+  padding-left: 0.8rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.steps-list li:hover {
+  color: #FF00B8;
+}
+
+.steps-list li::marker {
+  color: #FF00B8;
+  font-weight: 700;
+}
+
+/* FAQ Section */
+.detailed-section {
+  padding: 2.5rem;
+  border-radius: 16px;
+  margin: 3rem 0;
+}
+
+.detailed-section .section-title {
+  font-size: 1.9rem;
+  text-align: center;
+  color: #1d52b2;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.detailed-section p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  margin-bottom: 1.8rem;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  color: #1d52b2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  
+}
+
+.faq-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+  opacity: 1;
+  padding: 0.5rem 0;
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 3rem;
+}
+
+.cta-section h2 {
+  font-size: 1.9rem;
+  color: #1d52b2;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-btn {
+  background-color: #FF00B8;
+  color: white;
+}
+
+.book-btn:hover {
+  background-color: #e600a6;
+  transform: translateY(-2px);
+}
+
+.quote-btn {
+  background-color: #FCEE09;
+  color: #333;
+}
+
+.quote-btn:hover {
+  background-color: #e6d508;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .what-we-offer .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detailed-section {
+    padding: 1.5rem;
+  }
+
+  .detailed-section .section-title {
+    font-size: 1.7rem;
+  }
+
+  .steps-list {
+    font-size: 1rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
+
+  .cta-section {
+    padding: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .intro-text,
+  .cta-section p {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .what-we-offer .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .what-we-offer .card-image {
+    height: 150px;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .detailed-section {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+
+  .steps-list {
+    padding-left: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-item {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}

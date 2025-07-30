@@ -1,0 +1,94 @@
+.footer {
+  background-color: #111214;
+  color: white;
+  padding: 50px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h4 {
+  color: #FFD700;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.footer-section p {
+  color: #E6ECF9;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 8px;
+}
+
+.footer-section a {
+  color: #E6ECF9;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #FFD700;
+}
+
+.social-icons {
+  display: flex;                 /* Ensures inline layout */
+  justify-content: flex-start;  /* Aligns icons to left, change to center if needed */
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+/* Brand-colored social icons */
+.social-icons a {
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a.instagram { background-color: #E1306C; }
+.social-icons a.youtube { background-color: #FF0000; }
+.social-icons a.facebook { background-color: #1877F2; }
+.social-icons a.x-twitter { background-color: #000000; }
+.social-icons a.whatsapp { background-color: #25D366; }
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffffff33;
+}
+
+.footer-bottom a {
+  color: #E6ECF9;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #FFD700;
+}
+.footer-bottom p:nth-child(2) {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 5px;
+}

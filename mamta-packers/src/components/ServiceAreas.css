@@ -1,0 +1,115 @@
+.service-areas-section {
+  background: linear-gradient(to bottom right, #fff0fa, #ffe6f5);
+  padding: 80px 20px 60px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.service-areas-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.service-areas-section .highlight {
+  color: #ffb300; /* Gold Yellow */
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 0 10px;
+}
+
+.city-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 184, 0.3);
+  border-radius: 16px;
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 0, 184, 0.05);
+}
+
+.city-card:hover {
+  transform: scale(1.03) translateY(-5px);
+  border-color: #ff00b8;
+  box-shadow: 0 8px 24px rgba(255, 0, 184, 0.2);
+  background: #ff00b8;
+  color: white;
+}
+
+.city-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.city-icon {
+  font-size: 22px;
+  color: #fbc63a;
+  transition: color 0.3s ease;
+}
+
+.city-card:hover .city-icon {
+  color: #fff;
+}
+
+.city-name {
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.city-card:hover .city-name {
+  color: #fff;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.city-card:hover .arrow {
+  color: #fff;
+}
+
+.see-all-button {
+  background: linear-gradient(145deg, #ff00b8, #e000a3);
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 0, 184, 0.3);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.see-all-button:hover {
+  transform: scale(1.05);
+  background: #cc0097;
+  box-shadow: 0 6px 20px rgba(255, 0, 184, 0.4);
+}
